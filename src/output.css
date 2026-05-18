@@ -197,6 +197,9 @@
   .table {
     display: table;
   }
+  .w-\[600px\] {
+    width: 600px;
+  }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
   }
@@ -211,6 +214,9 @@
   }
   .flex-col-reverse {
     flex-direction: column-reverse;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -329,6 +335,11 @@
       }
     }
   }
+  .sm\:max-w-300 {
+    @media (width >= 40rem) {
+      max-width: calc(var(--spacing) * 300);
+    }
+  }
   .sm\:flex-col-reverse {
     @media (width >= 40rem) {
       flex-direction: column-reverse;
@@ -347,6 +358,11 @@
   .lg\:flex-col-reverse {
     @media (width >= 64rem) {
       flex-direction: column-reverse;
+    }
+  }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
     }
   }
   .sm\:lg\:flex {
